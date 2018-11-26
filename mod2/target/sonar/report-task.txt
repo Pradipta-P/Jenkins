@@ -1,6 +1,0 @@
-projectKey=Esquare:mod2
-serverUrl=http://localhost:9000
-serverVersion=7.4.0.18908
-dashboardUrl=http://localhost:9000/dashboard?id=Esquare%3Amod2
-ceTaskId=AWdIqcLfl-V4pLE1faPN
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AWdIqcLfl-V4pLE1faPN
