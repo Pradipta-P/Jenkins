@@ -1,0 +1,15 @@
+<project>
+ <modelVersion>4.0.0</modelVersion>
+     <groupId>Esquare</groupId>
+     <artifactId>Demo</artifactId>
+     <version>1.0-SNAPSHOT</version>
+	 <packaging>pom</packaging>
+
+  <name>Demo</name>
+  
+    
+  <modules>
+  <module>mod1</module>
+  <module>mod2</module>
+  </modules>
+</project>
