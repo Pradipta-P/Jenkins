@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>Esquare</groupId>
-  <artifactId>mod1</artifactId>
+  <artifactId>final</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>mod1</name>
+  <name>final</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
   
@@ -32,14 +32,21 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+	  <dependency> <groupId>Esquare</groupId>
+      <artifactId>mod1</artifactId>
+      <version>1.0-SNAPSHOT</version>
+	</dependency>
+	<dependency>
+	  <groupId>Esquare</groupId>
+      <artifactId>mod2</artifactId>
+      <version>1.0-SNAPSHOT</version>
+	</dependency>
   </dependencies>
 
- <profiles>
-    <profile>
-      <id>test</id>
-      <build>
-        <plugins>
-         <plugin>
+  <build>
+    <!--<pluginManagement>--><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+        <plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
@@ -68,62 +75,9 @@
           <artifactId>maven-deploy-plugin</artifactId>
           <version>2.8.2</version>
         </plugin>
-
-            <plugin>
-		        <artifactId>maven-antrun-plugin</artifactId>
-                <version>1.8</version>
-			 <executions>
-			    <execution>
-			       <phase>compile</phase>
-			       <goals>
-			           <goal>run</goal>
-			       </goals>
-			       <configuration>
-			         <target>
-			           <echo>================</echo>
-			           <echo>Helo King Yuvi </echo>
-			           <echo>================</echo>
-			         </target>
-			       </configuration>
-			    </execution>
-			 </executions>
-		    </plugin>
-		 <plugin>
-        <groupId>org.sonarsource.scanner.maven</groupId>
-        <artifactId>sonar-maven-plugin</artifactId>
-        <version>3.5.0.1254</version>
 		
-		
-      </plugin>
-  </plugins>
+		</plugins>
+	<!--</pluginManagement>-->
   </build>
-  </profile>
-    <profile>
-	 <id>mp</id>
-	 <build>
-	  <plugins>
-	   <plugin>
-			 <groupId>org.codehaus.mojo</groupId>
-             <artifactId>exec-maven-plugin</artifactId>
-             <version>1.6.0</version>
-			 
-			 <executions>
-			<execution>
-			<phase>test</phase>
-			<goals>
-			<goal>exec</goal>
-			</goals>
-			<configuration>
-			<executable>git</executable>
-			<arguments>
-			<argument>--version</argument>
-			</arguments>
-			</configuration>
-			</execution>
-			</executions>
-	  </plugin>
-	  </plugins>
-	 </build>
-	</profile>
-  </profiles>
+  
 </project>

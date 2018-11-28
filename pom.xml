@@ -11,5 +11,6 @@
   <modules>
   <module>mod1</module>
   <module>mod2</module>
+  <module>final</module>
   </modules>
 </project>
