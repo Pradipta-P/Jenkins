@@ -79,11 +79,11 @@
 			           <goal>run</goal>
 			       </goals>
 			       <configuration>
-			         <target>
+			         <tasks>
 			           <echo>================</echo>
 			           <echo>Helo King Yuvi </echo>
 			           <echo>================</echo>
-			         </target>
+			         </tasks>
 			       </configuration>
 			    </execution>
 			 </executions>
